@@ -135,13 +135,14 @@
                             <option value="argentina">Arg</option>
                         </select> -->
               <div class="profile__meta">
-                <a href="javascript:void(0)" class="profile__small">
+                <a href="javascript:void(0)" class="profile__small" id="identicon">
                   <img src="assets/images/avatar.png" alt="Profile Image" />
+                  
                 </a>
                 <div class="profile__info">
                   <div class="profile__info__head">
-                    <div>
-                      <img src="assets/images/avatar.png" alt="User" />
+                    <div id="identicon">
+                      <!-- <img src="assets/images/avatar.png" alt="User" /> -->
                     </div>
                     <div class="profile__head__content">
                       <a href="settings.html">0x745b...678n</a>
@@ -915,5 +916,15 @@
     <script src="assets/js/plugin.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <!-- Identicon Test -->
+    <script type="text/javascript">
+      identicon.generate({ id: 'ajido', size: 150 }, function(err, buffer) {
+          if (err) throw err;
+    
+          var img = new Image();
+          img.src = buffer;
+          document.getElementById('identicon').appendChild(img);
+      });
+    </script>
   </body>
 </html>
