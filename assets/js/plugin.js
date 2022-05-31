@@ -3,7 +3,7 @@
 
  Template Name: Edwiin
  Version: 1.0
- Description: Sports Hyip Investment HTML Template
+ Description: Crypto Investment With Edwiin
  Author: Uiaxis
  Author URI: https://themeforest.net/user/uiaxis
 
