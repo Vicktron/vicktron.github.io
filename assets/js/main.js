@@ -103,9 +103,9 @@
     });
 
     $("#investAmount").on("input", function (e) {
-      if (this.value > 1000 || this.value < 1) {
+      if (this.value > 1000000 || this.value < 5000) {
         $("#investAmount").val(1000);
-        alert("Value should be between 1 - 1000");
+        alert("Value should be between 5000 - 1000000");
         return false;
       }
 
