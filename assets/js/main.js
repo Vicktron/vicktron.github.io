@@ -98,8 +98,8 @@
     $(".range__slider").on("input", function () {
       $("#investAmount").val($(this).val());
       $(".range__output__value").html($(this).val());
-      $("#dailyProfit").html(((($(this).val() * 35) / 100) * 1).toFixed(4));
-      $("#totalProfit").html(((($(this).val() * 35) / 100) * 30).toFixed(4));
+      $("#dailyProfit").html(((($(this).val() * 5) / 100) * 1).toFixed(4));
+      $("#totalProfit").html(((($(this).val() * 5) / 100) * 30).toFixed(4));
     });
 
     $("#investAmount").on("input", function (e) {
@@ -138,7 +138,7 @@
             valPercent +
             ", #13d487), color-stop(" +
             valPercent +
-            ", #6c4edd));";
+            ", #6c4EDI));";
           el.style = style;
         };
         el.oninput();
@@ -156,7 +156,7 @@
           valPercent +
           ", #13d487), color-stop(" +
           valPercent +
-          ", #6c4edd));";
+          ", #6c4EDI));";
         el.style = style;
       };
       el.oninput();
