@@ -5,7 +5,7 @@
  Version: 1.0
  Description: Crypto Investment With Edwiin
  Author: Uiaxis
- Author URI: https://themeforest.net/user/uiaxis
+ Author URI: 
 
     =========================
 
