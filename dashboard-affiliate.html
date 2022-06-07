@@ -135,13 +135,17 @@
                             <option value="argentina">Arg</option>
                         </select> -->
               <div class="profile__meta">
-                <a href="javascript:void(0)" class="profile__small">
+                <a
+                  href="javascript:void(0)"
+                  class="profile__small"
+                  id="identicon"
+                >
                   <img src="assets/images/avatar.png" alt="Profile Image" />
                 </a>
                 <div class="profile__info">
                   <div class="profile__info__head">
-                    <div>
-                      <img src="assets/images/avatar.png" alt="User" />
+                    <div id="identicon">
+                      <!-- <img src="assets/images/avatar.png" alt="User" /> -->
                     </div>
                     <div class="profile__head__content">
                       <a href="settings.html">0x745b...678n</a>
@@ -222,7 +226,7 @@
                 <div class="sidenav__wrapper">
                   <ul>
                     <li>
-                      <a href="dashboard.html" class="sidenav__active">
+                      <a href="dashboard.html">
                         <img
                           src="assets/images/icons/dashboard.png"
                           alt="dashboard"
@@ -236,11 +240,11 @@
                           src="assets/images/icons/deposit.png"
                           alt="Deposit"
                         />
-                        Stake
+                        Deposit
                       </a>
                     </li>
                     <li>
-                      <a href="withdrawal.html">
+                      <a href="withdrawal.html" class="sidenav__active">
                         <img
                           src="assets/images/icons/withdraw.png"
                           alt="Withdrawal"
@@ -270,12 +274,12 @@
                   <hr />
                   <ul class="logout">
                     <li>
-                      <a href="dashboard.html#">
+                      <a href="index.html">
                         <img
                           src="assets/images/icons/logout.png"
                           alt="Logout"
                         />
-                        Logout
+                        Disconnect
                       </a>
                     </li>
                   </ul>
@@ -290,129 +294,8 @@
                     <i class="fas fa-bars"></i>
                   </a>
                 </div>
-                <div class="balance">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="balance__single column__space">
-                        <div class="balance__img">
-                          <img
-                            src="assets/images/dashboard/total-balance.png"
-                            alt="Total balance"
-                          />
-                        </div>
-                        <div class="balance__content">
-                          <p>Total Balance</p>
-                          <h5>STC 800.00</h5>
-                          <div class="last__action">
-                            <p class="tertiary">Staked Amount:</p>
-                            <p class="tertiary">STC 100.00</p>
-                          </div>
-                          <a href="deposit.html" class="button">New Deposit</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="balance__single balance__alt__content">
-                        <div class="balance__img">
-                          <img
-                            src="assets/images/dashboard/total-earned.png"
-                            alt="Total balance"
-                          />
-                        </div>
-                        <div class="balance__content">
-                          <p>Total Earned</p>
-                          <h5>STC 800.00</h5>
-                          <div class="last__action">
-                            <p class="tertiary">Current Plan:</p>
-                            <p class="tertiary">Investor</p>
-                          </div>
-                          <a href="withdrawal.html" class="button"
-                            >Withdraw Funds</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="lottery__win">
-                  <div class="lottery__head">
-                    <h5>Weekly Lottery</h5>
-                    <a href="dashboard-lottery.html" class="button"
-                      >Peek your Lucky Numbers</a
-                    >
-                  </div>
-                  <div class="lottery__numbers">
-                    <div class="row">
-                      <div class="col-lg-6 column__space">
-                        <div class="numbers__single">
-                          <p class="tertiary">Your Ticket</p>
-                          <div class="numbers">
-                            <div class="numbers__single__item">
-                              <p>02</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>48</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>58</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>11</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>15</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>38</p>
-                            </div>
-                            <div
-                              class="numbers__single__item numbers__single__item__active"
-                            >
-                              <p>55</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="foot">
-                          <p class="text-center">This week you won:</p>
-                          <h6 class="text-center">$0.00</h6>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="numbers__single">
-                          <p class="tertiary">This Week's Numbers</p>
-                          <div class="numbers">
-                            <div class="numbers__single__item">
-                              <p>02</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>48</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>58</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>11</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>15</p>
-                            </div>
-                            <div class="numbers__single__item">
-                              <p>38</p>
-                            </div>
-                            <div
-                              class="numbers__single__item numbers__single__item__active"
-                            >
-                              <p>55</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="foot">
-                          <p class="text-center">Last week you won:</p>
-                          <h6 class="text-center">$0.00</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="dashboard__head">
+                  <h5>Affiliate Program</h5>
                 </div>
                 <div class="affiliate__links">
                   <div class="row">
@@ -420,7 +303,9 @@
                       <div class="affiliate__link column__space">
                         <h5>Your Affiliate Link</h5>
                         <div class="copy">
-                          <p>https://stakecity.io/?ref=0x7gb...08fr</p>
+                          <p>
+                            https://stakecity.finance/?ref=0x6752hnfgftr345345345345345dfbmfg
+                          </p>
                           <a href="javascript:void(0)" class="button"
                             >Copy link</a
                           >
@@ -429,11 +314,11 @@
                     </div>
                     <div class="col-lg-4">
                       <div class="rank">
-                        <h6>Total Referrals</h6>
-                        <h5>01</h5>
+                        <h6>Total</h6>
+                        <h5>150</h5>
                         <img
                           src="assets/images/dashboard/hands.png"
-                          alt="Ranks"
+                          alt="Total_Referrals"
                         />
                       </div>
                     </div>
@@ -443,32 +328,38 @@
                   <div class="row">
                     <div class="col-md-6 col-lg-4">
                       <div class="level__single column__space">
-                        <a href="dashboard.html#" class="button">Direct</a>
-                        <p>0</p>
-                        <p class="tertiary">Partners</p>
+                        <p>100</p>
+                        <p class="tertiary">Accounts</p>
                         <hr />
-                        <h5>$0.00</h5>
+                        <h5>STC 5000</h5>
                         <p class="tertiary">Earned</p>
+                        <a href="dashboard-affiliate.html#" class="button"
+                          >Withdraw</a
+                        >
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                       <div class="level__single column__space">
-                        <a href="dashboard.html#" class="button">Level 2</a>
-                        <p>0</p>
-                        <p class="tertiary">Partners</p>
+                        <p>150</p>
+                        <p class="tertiary">Accounts</p>
                         <hr />
-                        <h5>$0.00</h5>
+                        <h5>$STC</h5>
                         <p class="tertiary">Earned</p>
+                        <a href="dashboard-affiliate.html#" class="button"
+                          >Withdraw</a
+                        >
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                       <div class="level__single">
-                        <a href="dashboard.html#" class="button">Level 3</a>
-                        <p>0 / 0</p>
-                        <p class="tertiary">Partners</p>
+                        <p>150</p>
+                        <p class="tertiary">Accounts</p>
                         <hr />
-                        <h5>$0.00</h5>
+                        <h5>$STC</h5>
                         <p class="tertiary">Earned</p>
+                        <a href="dashboard-affiliate.html#" class="button"
+                          >Withdraw</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -512,9 +403,10 @@
             <div class="col-lg-8">
               <div class="footer__credit__left">
                 <p class="text-center text-lg-start">
-                  Copyright © <a href="dashboard.html#0">StakeCity</a> |
-                  Designed by
-                  <a href="">Victhereum</a>
+                  Copyright ©
+                  <a href="dashboard-affiliate.html#0">StakeCity</a> | Designed
+                  by
+                  <a href="https://themeforest.net/user/uiaxis">Victhereum</a>
                 </p>
               </div>
             </div>
