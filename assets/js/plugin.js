@@ -1,9 +1,9 @@
 /* ==============
  ========= Js Documentation =========
 
- Template Name: StakeCity
+ Template Name: Edwiin
  Version: 1.0
- Description: Crypto Investment With StakeCity
+ Description: Crypto Investment With Edwiin
  Author: Uiaxis
  Author URI: 
 
