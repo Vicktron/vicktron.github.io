@@ -1,9 +1,9 @@
 /* ==============
  ========= Js Documentation =========
 
- Template Name: StakeCity
+ Template Name: StakerCity
  Version: 1.0
- Description: Crypto Investment With StakeCity
+ Description: Crypto Investment With StakerCity
  Author: Uiaxis
  Author URI: 
 
@@ -732,3 +732,22 @@
     });
   });
 })(jQuery);
+
+// Copy to clipboard
+function copyEl() {
+  /* Get the text field */
+  var copyText = document.getElementById("copy-el");
+  var copied = document.getElementById("el-copied")
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.innerHTML);
+
+  /* Alert the copied text */
+  copied.style.width = "250px";
+  copied.innerHTML = "Copied";
+  setTimeout(() => {  
+    copied.innerHTML = '<em class="fas fa-copy"></em>' ;
+    copied.style.width = "50px";},
+     3000);
+  
+}

@@ -12,16 +12,16 @@
       type="image/x-icon"
     />
     <!-- #title -->
-    <title>StakeCity &dash; Coin</title>
+    <title>StakerCity &dash; Coin</title>
     <!-- #keywords -->
     <meta
       name="keywords"
-      content="cryptocurrency, financial, financial company, stakecity, STC, crypto, coin, token, staking, "
+      content="cryptocurrency, financial, financial company, stakecity, STAKER, crypto, coin, token, staking, "
     />
     <!-- #description -->
-    <meta name="description" content="Crypto Investment With StakeCity" />
+    <meta name="description" content="Crypto Investment With StakerCity" />
     <!-- #author -->
-    <meta name="Victhereum" content="StakeCity Token and Ecosystem" />
+    <meta name="Victhereum" content="StakerCity Token and Ecosystem" />
 
     <!-- ==== css dependencies start ==== -->
 
@@ -121,7 +121,7 @@
                   </div>
                   <div class="notification__single">
                     <a href="dashboard.html#">
-                      <h6>Welcome to StakeCity</h6>
+                      <h6>Welcome to StakerCity</h6>
                       <p class="tertiary">Succesfully Staked</p>
                     </a>
                     <p class="tertiary time">2 hours ago</p>
@@ -173,40 +173,6 @@
             class="collapse navbar-collapse justify-content-end order-3 order-xl-2"
             id="primaryNav"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="javascript:void(0)"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  How it Works
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="features.html">About</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="referral-program.html"
-                      >Affiliate</a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="lottery.html">Lottery</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="faq.html">Community</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="faq.html">FAQ</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>
@@ -240,7 +206,7 @@
                           src="assets/images/icons/deposit.png"
                           alt="Deposit"
                         />
-                        Deposit
+                        Stake
                       </a>
                     </li>
                     <li>
@@ -250,6 +216,15 @@
                           alt="Withdrawal"
                         />
                         Withdrawal
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sidenav__active">
+                        <img
+                          src="assets/images/icons/nft.png"
+                          alt="Withdrawal"
+                        />
+                        NFT(Coming Soon)
                       </a>
                     </li>
                     <li>
@@ -303,11 +278,11 @@
                       <div class="affiliate__link column__space">
                         <h5>Your Affiliate Link</h5>
                         <div class="copy">
-                          <p>
+                          <p id="copy-el">
                             https://stakecity.finance/?ref=0x6752hnfgftr345345345345345dfbmfg
                           </p>
-                          <a href="javascript:void(0)" class="button"
-                            >Copy link</a
+                          <button id="el-copied" onclick="copyEl()" class="button"
+                            >C<em class="fas fa-copy"></em></button
                           >
                         </div>
                       </div>
@@ -331,7 +306,7 @@
                         <p>100</p>
                         <p class="tertiary">Accounts</p>
                         <hr />
-                        <h5>STC 5000</h5>
+                        <h5>$TAKER 5000</h5>
                         <p class="tertiary">Earned</p>
                         <a href="dashboard-affiliate.html#" class="button"
                           >Withdraw</a
@@ -343,7 +318,7 @@
                         <p>150</p>
                         <p class="tertiary">Accounts</p>
                         <hr />
-                        <h5>$STC</h5>
+                        <h5>$TAKER</h5>
                         <p class="tertiary">Earned</p>
                         <a href="dashboard-affiliate.html#" class="button"
                           >Withdraw</a
@@ -355,7 +330,7 @@
                         <p>150</p>
                         <p class="tertiary">Accounts</p>
                         <hr />
-                        <h5>$STC</h5>
+                        <h5>$TAKER</h5>
                         <p class="tertiary">Earned</p>
                         <a href="dashboard-affiliate.html#" class="button"
                           >Withdraw</a
@@ -404,7 +379,7 @@
               <div class="footer__credit__left">
                 <p class="text-center text-lg-start">
                   Copyright ©
-                  <a href="dashboard-affiliate.html#0">StakeCity</a> | Designed
+                  <a href="dashboard-affiliate.html#0">StakerCity</a> | Designed
                   by
                   <a href="https://themeforest.net/user/uiaxis">Victhereum</a>
                 </p>

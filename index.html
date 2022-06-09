@@ -12,17 +12,17 @@
       type="image/x-icon"
     />
     <!-- #title -->
-    <title>StakeCity &dash; Coin</title>
+    <title>StakerCity &dash; Coin</title>
     <!-- #keywords -->
     <meta
       name="keywords"
-      content="cryptocurrency, financial, financial company, stakecity, STC, crypto, coin, token, staking, "
+      content="cryptocurrency, financial, financial company, stakecity, STAKER, crypto, coin, token, staking, "
     />
     <!-- #description -->
     .
-    <meta name="description" content="Crypto Investment With StakeCity" />
+    <meta name="description" content="Crypto Investment With StakerCity" />
     <!-- #author -->
-    <meta name="Victhereum" content="StakeCity Token and Ecosystem" />
+    <meta name="Victhereum" content="StakerCity Token and Ecosystem" />
 
     <!-- ==== css dependencies start ==== -->
 
@@ -113,7 +113,11 @@
               <!-- <a href="login.html" class="button active__btn d-none d-sm-block">
                 Log In
               </a> -->
-              <a class="button d-none d-sm-block" href="dashboard.html">
+              <a
+                class="button"
+                href="dashboard.html"
+                style="margin-right: 10px"
+              >
                 App
               </a>
             </div>
@@ -136,9 +140,6 @@
             id="primaryNav"
           >
             <ul class="navbar-nav">
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li> -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -152,22 +153,18 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="features.html">About</a>
+                    <a class="dropdown-item" href="#tokenomics">Tokenomics</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="referral-program.html"
-                      >Affiliate</a
+                    <a class="dropdown-item" href="#features"
+                      >Features</a
                     >
                   </li>
-
                   <li>
-                    <a class="dropdown-item" href="lottery.html">Lottery</a>
+                    <a class="dropdown-item" href="#friends">Friends</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="faq.html">Community</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                    <a class="dropdown-item" href="#team">Team</a>
                   </li>
                 </ul>
               </li>
@@ -190,24 +187,45 @@
             <div class="col-lg-6 col-xl-6">
               <div class="hero__content">
                 <h4 class="content__space--small">Stake tokens and Earn</h4>
-                <h1 class="mb-25">Passive Income With $STC</h1>
+                <h1 class="mb-25">Passive Income With $TAKER</h1>
                 <p class="primary mb-38">
                   Mint tokens to earn passive income by staking them in
-                  StakeCity decentralized ecosystem and earn through staking rewards, NFTs, referrals and Lottery
+                  StakerCity decentralized ecosystem and earn through staking
+                  rewards, NFTs, referrals and Lottery
                 </p>
-                <div class="hero__cta">
-                  <!-- this should connect the wallet -->
-                  <a href="dashboard.html" class="button">Get Started</a>
+              </div>
+              <div class="col-lg-12">
+                <div class="affiliate__link column__space">
+                  <div class="hero__cta">
+                    <!-- this should connect the wallet -->
+                    <a href="dashboard.html" class="button">Buy</a>
 
-                  <div class="video-btn">
-                    <a
-                      class="video-popup"
-                      href="https://www.youtube.com"
-                      target="_blank"
-                      title="YouTube video player"
+                    <div class="video-btn">
+                      <a
+                        class="video-popup"
+                        href="https://www.youtube.com"
+                        target="_blank"
+                        title="YouTube video player"
+                      >
+                        <img
+                          src="assets/images/icons/play.png"
+                          alt="Play Icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="copy">
+                    <p id="copy-el">
+                      0x9C5A36A059F0D01D3dD5ffd0EdF3825633B84D0A
+                    </p>
+                    <button
+                      id="el-copied"
+                      onclick="copyEl()"
+                      class="button"
+                      style="width: 50px"
                     >
-                      <img src="assets/images/icons/play.png" alt="Play Icon" />
-                    </a>
+                      <em class="fas fa-copy"></em>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -224,116 +242,16 @@
         </div>
       </div>
       <div class="hero__animation">
-        <img src="assets/images/hero/eth.png" alt="Ethereum" class="eth" />
+        <img src="assets/images/hero/staker.png" alt="Ethereum" class="eth" />
         <img
           src="assets/images/hero/eth-small.png"
           alt="Ethereum"
           class="eth--small"
         />
-        <img src="assets/images/hero/btc.png" alt="Bitcoin" class="btc" />
+        <img src="assets/images/hero/staker.png" alt="Bitcoin" class="btc" />
       </div>
     </section>
     <!-- ==== #hero section end ==== -->
-
-    <!-- ==== pricing plan section start ====
-    <section class="plan">
-      <div class="container">
-        <div class="plan__area">
-          <form action="index.html#" method="post" id="investForm">
-            <div class="row cta__space">
-              <div class="col-lg-4 column__space">
-                <div class="plan__select column__space">
-                  <label class="secondary content__space--extra--small"
-                    >Select The Plan</label
-                  >
-                  <select id="selectPlan">
-                    <option value="30">SPO - 10</option>
-                    <option value="35">SPO - 11</option>
-                    <option value="40">SPO - 12</option>
-                    <option value="45">SPO - 13</option>
-                    <option value="50">SPO - 14</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-4 column__space">
-                <div class="plan__select">
-                  <label class="secondary content__space--extra--small"
-                    >Select Payment Method</label
-                  >
-                  <select id="selectPayment">
-                    <option value="STC">StakeCity</option>
-                    <option value="Btc">Bitcoin</option>
-                    <option value="Ltc">Litecoin</option>
-                    <option value="Doge">Dogecoin</option>
-                    <option value="Rip">Ripple</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="plan__select">
-                  <label class="secondary content__space--extra--small"
-                    >Enter The amount</label
-                  >
-                  <input
-                    type="number"
-                    name="amount"
-                    id="investAmount"
-                    required="required"
-                    placeholder="296"
-                    min="1"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="row mb-25">
-              <div class="col-lg-7">
-                <div class="daily-profit column__space">
-                  <p class="secondary mb-20">Daily Profit</p>
-                  <h3><span id="dailyProfit"></span> STC</h3>
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="total-profit">
-                  <p class="secondary mb-20">Total Profit</p>
-                  <h3><span id="totalProfit"></span> STC</h3>
-                </div>
-              </div>
-            </div>
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-9">
-                <div class="slide__group column__space">
-                  <div class="output d-flex">
-                    <span class="range__output__value">296</span>
-                    <span>STC</span>
-                  </div>
-                  <input
-                    class="range__slider"
-                    type="range"
-                    name="invest__range"
-                    id="rangeSlider"
-                    max="1000"
-                    min="1"
-                    value="296"
-                  />
-                  <div class="slide__min__max">
-                    <p>1.00 STC</p>
-                    <p>1000 STC</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="plan__cta text-start text-lg-center">
-                  <button class="button primary">Start Invest Now</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section> -->
-    <!-- ==== #pricing plan section end ==== -->
-    <!-- ==== feature section start ==== -->
-    <!-- ==== mission section start ==== -->
     <section class="mission section__space over__hi">
       <div class="container">
         <div class="mission__area">
@@ -351,7 +269,7 @@
                     We are on a mission to democratize investment
                   </h2>
                   <p>
-                    StakeCity makes investing in cryptocurrency safer, quicker,
+                    StakerCity makes investing in cryptocurrency safer, quicker,
                     and simpler than ever before. Our one-of-a-kind staking
                     plans, vibrant community, and behaviorally-driven rewards
                     program provide an investment experience unlike any other.
@@ -394,68 +312,150 @@
     <!-- ==== #mission section end ==== -->
     <!-- ==== #Tax Sharing -->
     <section
-    class="feature-two section__space bg__img"
-    data-background="./assets/images/features/features-bg-two.png"
-  >
-    <div class="container">
-      <div class="feature-two__wrapper">
-        <div class="section__header section__header__space">
-          <h5 class="content__space">Tokenomics</h5>
-          <h2 class="content__space">
-      
-          </h2>
-          <p>
-            StakeCity's tokenomics guarantee that holders are rewarded and that the project's future is funded.
-          </p>
-        </div>
-        <div class="row content__space">
-          <div class="col-sm-6 col-xl-3">
-            <div
-              class="feature__item__content text-center column__space--secondary"
-            >
-            <h2 class="text-center" style="color: #13d487;">3%</h2>
-              <p class="text-center secondary">
-                BUSD Reflection
-              </p>
-            </div>
+      class="feature-two section__space bg__img"
+      data-background="./assets/images/features/features-bg-two.png" id="tokenomics"
+    >
+      <div class="container">
+        <div class="feature-two__wrapper">
+          <div class="section__header section__header__space">
+            <h5 class="content__space">Tokenomics</h5>
+            <h2 class="content__space"></h2>
+            <p>
+              StakerCity's tokenomics guarantee that holders are rewarded and
+              that the project's future is funded.
+            </p>
           </div>
-          <div class="col-sm-6 col-xl-3">
-            <div
-              class="feature__item__content text-center column__space--secondary"
-            >
-              <h2 class="text-center" style="color: #13d487;">2%</h2>
-              <p class="text-center secondary">
-                Liquidity Pool
-              </p>
+          <div class="row content__space">
+            <div class="col-sm-6 col-xl-3">
+              <div
+                class="feature__item__content text-center column__space--secondary"
+              >
+                <h2 class="text-center" style="color: #13d487">3%</h2>
+                <p class="text-center secondary">BUSD Reflection</p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div
-              class="feature__item__content item__alt text-center column__space"
-            >
-            <h2 class="text-center" style="color: #13d487;">2%</h2>
-              <p class="text-center secondary">
-                Buy Back & Burn
-              </p>
+            <div class="col-sm-6 col-xl-3">
+              <div
+                class="feature__item__content text-center column__space--secondary"
+              >
+                <h2 class="text-center" style="color: #13d487">2%</h2>
+                <p class="text-center secondary">Liquidity Pool</p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="feature__item__content text-center">
-              <h2 class="text-center" style="color: #13d487;">3%</h2>
-              <p class="text-center secondary">
-                Marketing & Development
-              </p>
+            <div class="col-sm-6 col-xl-3">
+              <div
+                class="feature__item__content item__alt text-center column__space"
+              >
+                <h2 class="text-center" style="color: #13d487">2%</h2>
+                <p class="text-center secondary">Buy Back & Burn</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="feature__item__content text-center">
+                <h2 class="text-center" style="color: #13d487">3%</h2>
+                <p class="text-center secondary">Marketing & Development</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+    <!-- ==== feature section start ==== -->
+    <section
+      class="feature section__space bg__img"
+      data-background="./assets/images/features/features-bg.png" id="features"
+    >
+      <div class="container">
+        <div class="feature__area">
+          <div class="row d-flex align-items-center">
+            <div class="col-xl-6">
+              <div class="feature__content column__space--secondary">
+                <h5 class="content__space">Effortless crypto investing</h5>
+                <h2 class="content__space--small">
+                  We Offer You Decentralized Investments
+                </h2>
+                <p class="mb-38">
+                  Remain in profit during the bear market without loosing your
+                  capital
+                </p>
+                <a href="investment-plan.html" class="button">Enter App</a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="feature__item">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div
+                      class="feature__item__content text-center content__space" 
+                    ><a href="#staking">
+                      <img
+                        src="assets/images/features/simple.png"
+                        alt="Simple"
+                        class="content__space"
+                      />
+                      <p class="text-center secondary">Stake to Earn</p>
+                      </a>
+                    </div>
+                    <div class="feature__item__content text-center">
+                      <a href="#nft">
+                      <img
+                        src="assets/images/features/nft.png"
+                        alt="Professional"
+                        class="content__space"
+                      />
+                      <p class="text-center secondary">
+                        NFT <br />
+                        Powerups
+                      </p>
+                      <h6 class="text-center secondary" style="color: #04dc60;">
+                        Coming Soon
+                      </h6>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div
+                      class="feature__item__content feature__item__content--alt text-center content__space"
+                    >
+                    <a href="#lottery">
+                      <img
+                        src="assets/images/lottery/58.png"
+                        alt="Multi-Currency"
+                        class="content__space"
+                      />
+                      <p class="text-center secondary">
+                        Lottery
+                      </p>
+                      <h6 class="text-center secondary" style="color: #04dc60;">
+                        Coming Soon
+                      </h6>
+                      </a>
+                    </div>
+                    <div class="feature__item__content text-center">
+                      <a href="#affiliates">
+                      <img
+                        src="assets/images/dive/referral.png"
+                        alt="Referral"
+                        class="content__space"
+                      />
+                      <p class="text-center secondary">
+                        Affliation by Referral
+                      </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== #feature section end ==== -->
     <!-- ==== investment plan section start ==== -->
     <section
       class="investment invest__alt section__space bg__img pos__rel over__hi"
-      data-background="./assets/images/investment/investment-bg.png"
+      data-background="./assets/images/investment/investment-bg.png" id="staking"
     >
       <div class="container">
         <div class="investment__area">
@@ -472,8 +472,8 @@
             <div class="investment__item">
               <div class="investment__item__inner">
                 <img
-                  src="assets/images/investment/StakeCity_Logo.png"
-                  alt="STC-10"
+                  src="assets/images/investment/StakerCity_Logo.png"
+                  alt="$TAKER-10"
                 />
                 <div class="investment__item__content text-center">
                   <p class="secondary text-center">Builder</p>
@@ -486,7 +486,7 @@
                       class="d-flex align-items-center justify-content-between"
                     >
                       <p>Min. Invest</p>
-                      <p>STC 5000</p>
+                      <p>$TAKER 5000</p>
                     </div>
                   </div>
                   <div class="invest__limit mb-35">
@@ -504,8 +504,8 @@
             <div class="investment__item">
               <div class="investment__item__inner">
                 <img
-                  src="assets/images/investment/StakeCity_Logo.png"
-                  alt="STC-11"
+                  src="assets/images/investment/StakerCity_Logo.png"
+                  alt="$TAKER-11"
                 />
                 <div class="investment__item__content text-center">
                   <p class="secondary text-center">Financier</p>
@@ -518,7 +518,7 @@
                       class="d-flex align-items-center justify-content-between"
                     >
                       <p>Min. Invest</p>
-                      <p>STC 30,000</p>
+                      <p>$TAKER 30,000</p>
                     </div>
                   </div>
                   <div class="invest__limit mb-35">
@@ -529,17 +529,15 @@
                       <p>30 Days</p>
                     </div>
                   </div>
-                  <a href="investment-plan.html" class="button"
-                    >Stake Now</a
-                  >
+                  <a href="investment-plan.html" class="button">Stake Now</a>
                 </div>
               </div>
             </div>
             <div class="investment__item">
               <div class="investment__item__inner">
                 <img
-                  src="assets/images/investment/StakeCity_Logo.png"
-                  alt="STC-12"
+                  src="assets/images/investment/StakerCity_Logo.png"
+                  alt="$TAKER-12"
                 />
                 <div class="investment__item__content text-center">
                   <p class="secondary text-center">Banker</p>
@@ -552,7 +550,7 @@
                       class="d-flex align-items-center justify-content-between"
                     >
                       <p>Min. Invest</p>
-                      <p>STC 100,000</p>
+                      <p>$TAKER 100,000</p>
                     </div>
                   </div>
                   <div class="invest__limit mb-35">
@@ -570,8 +568,8 @@
             <div class="investment__item">
               <div class="investment__item__inner">
                 <img
-                  src="assets/images/investment/StakeCity_Logo.png"
-                  alt="STC-13"
+                  src="assets/images/investment/StakerCity_Logo.png"
+                  alt="$TAKER-13"
                 />
                 <div class="investment__item__content text-center">
                   <p class="secondary text-center">Investor</p>
@@ -584,7 +582,7 @@
                       class="d-flex align-items-center justify-content-between"
                     >
                       <p>Min. Invest</p>
-                      <p>STC 100,000</p>
+                      <p>$TAKER 100,000</p>
                     </div>
                   </div>
                   <div class="invest__limit mb-35">
@@ -595,9 +593,7 @@
                       <p>6 Months</p>
                     </div>
                   </div>
-                  <a href="investment-plan.html" class="button"
-                    >Stake Now</a
-                  >
+                  <a href="investment-plan.html" class="button">Stake Now</a>
                 </div>
               </div>
             </div>
@@ -608,102 +604,89 @@
         </div>
       </div>
       <div class="investment__animation">
-        <img src="assets/images/investment/btc.png" alt="bitcoin" class="btc" />
         <img
-          src="assets/images/investment/eth.png"
+          src="assets/images/investment/staker.png"
+          alt="bitcoin"
+          class="btc"
+        />
+        <img
+          src="assets/images/investment/staker.png"
           alt="Ethereum"
           class="eth"
         />
         <img
-          src="assets/images/investment/ltc.png"
+          src="assets/images/investment/staker.png"
           alt="Litecoin"
           class="ltc"
         />
       </div>
     </section>
     <!-- ==== #investment plan section end ==== -->
-
-    <!-- ==== feature section start ==== -->
-    <section
-      class="feature section__space bg__img"
-      data-background="./assets/images/features/features-bg.png"
-    >
-      <div class="container">
-        <div class="feature__area">
-          <div class="row d-flex align-items-center">
-            <div class="col-xl-6">
-              <div class="feature__content column__space--secondary">
-                <h5 class="content__space">Effortless crypto investing</h5>
-                <h2 class="content__space--small">
-                  We Offer You Decentralized
-                  Investments
-                </h2>
-                <p class="mb-38">
-                  Remain in profit during the bear market without loosing your
-                  capital
-                </p>
-                <a href="investment-plan.html" class="button">Enter App</a>
-              </div>
-            </div>
-            <div class="col-xl-6">
-              <div class="feature__item">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div
-                      class="feature__item__content text-center content__space"
-                    >
-                      <img
-                        src="assets/images/features/simple.png"
-                        alt="Simple"
-                        class="content__space"
-                      />
-                      <p class="text-center secondary">Stake to Earn</p>
-                    </div>
-                    <div class="feature__item__content text-center">
-                      <img
-                        src="assets/images/features/professional.png"
-                        alt="Professional"
-                        class="content__space"
-                      />
-                      <p class="text-center secondary">
-                        Safe <br />
-                        & Secure
-                      </p>
-                    </div>
+        <!-- Affiliates -->
+        <section class="earning section__space over__hi" id="affiliates">
+          <div class="container">
+            <div class="earning__area">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-xl-5 d-none d-lg-block">
+                  <div class="earning__illustration thumb__rtl column__space">
+                    <img
+                      src="assets/images/affiliate/partner.png"
+                      alt="Stake and get Paid"
+                    />
                   </div>
-                  <div class="col-sm-6">
-                    <div
-                      class="feature__item__content feature__item__content--alt text-center content__space"
-                    >
-                      <img
-                        src="assets/images/features/multi-currency.png"
-                        alt="Multi-Currency"
-                        class="content__space"
-                      />
-                      <p class="text-center secondary">Lottery</p>
-                    </div>
-                    <div class="feature__item__content text-center">
-                      <img
-                        src="assets/images/dive/referral.png"
-                        alt="Referral"
-                        class="content__space"
-                      />
-                      <p class="text-center secondary">
-                        Affliation by Referral
+                </div>
+                <div class="col-lg-6 col-xl-6 offset-xl-1">
+                  <div class="earning__content">
+                    <div class="section__header text-start section__header__space">
+                      <h5 class="text-start mb-25">Get paid for referring</h5>
+                      <h2 class="text-start content__space">
+                        Start Earning in 3 Easy Steps
+                      </h2>
+                      <p class="text-start">
+                        StakerCity encourages community activity. Get rewarded when
+                        your wallet address is used as referral for consecutive
+                        number of times plus 2% of your referee's staked coins
                       </p>
+                    </div>
+                    <div class="earning__items content__space">
+                      <img src="assets/images/affiliate/join.png" alt="Join" />
+                      <div class="earning__items__content">
+                        <h4 class="content__space--extra--small">Stake</h4>
+                        <p>Join the pool and get activated by staking your coins</p>
+                      </div>
+                    </div>
+                    <div class="earning__items content__space">
+                      <img
+                        src="assets/images/affiliate/promote.png"
+                        alt="Promote"
+                      />
+                      <div class="earning__items__content">
+                        <h4 class="mb-8">Copy Link</h4>
+                        <p>
+                          A ref link is created for you when you stake, increase
+                          your referrals by promoting your link
+                        </p>
+                      </div>
+                    </div>
+                    <div class="earning__items">
+                      <img src="assets/images/affiliate/earn.png" alt="Earn" />
+                      <div class="earning__items__content">
+                        <h4 class="mb-8">Earn</h4>
+                        <p>
+                          Earn massively as you hit StakerCity referrals milestones,
+                          ranging from 100-1000-10000 adresses plus 2% of your
+                          referee staked coins
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==== #feature section end ==== -->
-
+        </section>
     <!-- ==== win chance section start ==== -->
-    <section class="win section__space pos__rel over__hi">
+    <section class="win section__space pos__rel over__hi" id="lottery">
       <div class="container">
         <div class="win__area">
           <div class="row d-flex align-items-center">
@@ -719,17 +702,17 @@
               <div class="win__content">
                 <div class="section__header text-start">
                   <h5 class="content__space--alt text-start">
-                    (Coming Soon)<br>
+                    (Coming Soon)<br />
                     Get Chance to Win
                   </h5>
                   <h2 class="content__space--alt text-start">
-                    Win up to 10 Thousand $STC in the Weekly lottery
+                    Win up to 10 Thousand $TAKER in the Weekly lottery
                   </h2>
                   <p class="mb-35 text-start">
                     For every active $ 500 investment you will receive a lottery
                     ticket to our weekly raffle every Monday. Pick your lucky
-                    numbers and win up to 10 thousand $STC. The more numbers you
-                    match, the more money you win!
+                    numbers and win up to 10 thousand $TAKER. The more numbers
+                    you match, the more money you win!
                   </p>
                   <a href="investment-plan.html" class="button"
                     >Start Invest Now</a
@@ -774,77 +757,77 @@
       </div>
     </section>
     <!-- ==== #win chance section end ==== -->
-    <!-- Affiliates -->
     <section
-    class="affiliate section__space bg__img"
-    data-background="./assets/images/affiliate/affiliate-bg.png"
-  >
-    <div class="container">
-      <div class="affiliate__area">
-        <div class="section__header section__header__space">
-          <h5 class="mb-25">What You Will Get As</h5>
-          <h2 class="mb-15">An Affiliate Partner</h2>
-          <p class="mb-35">
-            The affiliate program allows project participants to receive
-            additional profit based on the number of persons they referred 👇.
-          </p>
-          <a href="dashboard-affiliate.html" class="button">Join Us</a>
-        </div>
-        <div class="affiliate__commission">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-6 col-lg-4">
-              <div class="affiliate__items column__space">
-                <div class="affiliate__img__group">
-                  <img
-                    src="assets/images/affiliate/icon-bg.png"
-                    alt="Spider Nest"
-                  />
-                  <img src="assets/images/affiliate/one.png" alt="Step" />
-                </div>
-                <div>
-                  <h3 class="content__space--small">100 Accounts</h3>
-                  <p>STC 5000</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="affiliate__items column__space">
-                <div class="affiliate__img__group">
-                  <img
-                    src="assets/images/affiliate/icon-bg.png"
-                    alt="Spider Nest"
-                  />
-                  <img src="assets/images/affiliate/two.png" alt="Step" />
-                </div>
-                <div>
-                  <h3 class="content__space--small">1000 Accounts</h3>
-                  <p>STC 100,000</p>
+      class="affiliate section__space bg__img"
+      data-background="./assets/images/affiliate/affiliate-bg.png"
+    >
+      <div class="container">
+        <div class="affiliate__area">
+          <div class="section__header section__header__space">
+            <h5 class="mb-25">What You Will Get As</h5>
+            <h2 class="mb-15">An Affiliate Partner</h2>
+            <p class="mb-35">
+              The affiliate program allows project participants to receive
+              additional profit based on the number of persons they referred
+              plus 2% of referee's staked coins 👇.
+            </p>
+            <a href="dashboard-affiliate.html" class="button">Join Us</a>
+          </div>
+          <div class="affiliate__commission">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6 col-lg-4">
+                <div class="affiliate__items column__space">
+                  <div class="affiliate__img__group">
+                    <img
+                      src="assets/images/affiliate/icon-bg.png"
+                      alt="Spider Nest"
+                    />
+                    <img src="assets/images/affiliate/one.png" alt="Step" />
+                  </div>
+                  <div>
+                    <h3 class="content__space--small">100 Accounts</h3>
+                    <p>$TAKER 5000</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="affiliate__items">
-                <div class="affiliate__img__group">
-                  <img
-                    src="assets/images/affiliate/icon-bg.png"
-                    alt="Spider Nest"
-                  />
-                  <img src="assets/images/affiliate/three.png" alt="Step" />
+              <div class="col-md-6 col-lg-4">
+                <div class="affiliate__items column__space">
+                  <div class="affiliate__img__group">
+                    <img
+                      src="assets/images/affiliate/icon-bg.png"
+                      alt="Spider Nest"
+                    />
+                    <img src="assets/images/affiliate/two.png" alt="Step" />
+                  </div>
+                  <div>
+                    <h3 class="content__space--small">1000 Accounts</h3>
+                    <p>$TAKER 100,000</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="content__space--small">10,000 Accounts</h3>
-                  <p>STC 500,000</p>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="affiliate__items">
+                  <div class="affiliate__img__group">
+                    <img
+                      src="assets/images/affiliate/icon-bg.png"
+                      alt="Spider Nest"
+                    />
+                    <img src="assets/images/affiliate/three.png" alt="Step" />
+                  </div>
+                  <div>
+                    <h3 class="content__space--small">10,000 Accounts</h3>
+                    <p>$TAKER 500,000</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- ==== profit section start ==== -->
-    <section class="profit pos__rel">
+    <section class="profit pos__rel" id="whitepaper">
       <div class="container">
         <div
           class="profit__area bg__img"
@@ -877,87 +860,10 @@
     </section>
     <!-- ==== #profit section end ==== -->
 
-    <!-- ==== payment section start ==== -->
-    <!-- <section
-      class="payment section__space over__hi bg__img"
-      data-background="./assets/images/currency/payment-bg.png"
-    >
-      <div class="container">
-        <div class="payment__area">
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-5 d-none d-lg-block">
-              <div class="payment__thumb thumb__rtl">
-                <img
-                  src="assets/images/currency/currency.png"
-                  alt="Wide Payment"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6 offset-xl-1">
-              <div class="payment__content">
-                <div class="section__header section__header__space">
-                  <h5 class="content__space text-start">Truly Decentralized</h5>
-                  <h2 class="content__space text-start">
-                    Permissionless and Trustless Ecosystem
-                  </h2>
-                  <p class="text-start">
-                    Make Passive Income in a Decentralized Manner
-                  </p>
-                </div>
-                <div class="payment__item content__space">
-                  <div class="payment__item__inner">
-                    <img
-                      src="assets/images/currency/no-limit.png"
-                      alt="No Limit"
-                    />
-                    <div>
-                      <h4 class="content__space--small">No Limit</h4>
-                      <p>Unlimited maximum withdrawal, 24/7 Uptime</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="payment__item content__space">
-                  <div class="payment__item__inner">
-                    <img
-                      src="assets/images/currency/conversion.png"
-                      alt="Conversion"
-                    />
-                    <div>
-                      <h4 class="content__space--small">Higher Conversions</h4>
-                      <p>
-                        Get better interest rates than your banks and avoid any
-                        extra transfer fees or complications.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="payment__item">
-                  <div class="payment__item__inner">
-                    <img
-                      src="assets/images/currency/minimize.png"
-                      alt="Minimize"
-                    />
-                    <div>
-                      <h4 class="content__space--small">Recieve Reflections</h4>
-                      <p>
-                        Get a piece of the cake whenever someone does a
-                        transaction on StakeCity
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- ==== #payment section end ==== -->
-
     <!-- ==== transaction table start ==== -->
     <section
       class="section__space transaction pos__rel bg__img"
-      data-background="./assets/images/transaction/transaction-bg.png"
+      data-background="./assets/images/transaction/transaction-bg.png" id="transactions"
     >
       <div class="container">
         <div class="transaction__area">
@@ -994,8 +900,8 @@
                           <span>0x7dcn...987gt</span>
                         </div>
                       </td>
-                      <td>STC 100,000</td>
-                      <td>STC 160,000</td>
+                      <td>$TAKER 100,000</td>
+                      <td>$TAKER 160,000</td>
                       <td>Investor</td>
                     </tr>
                   </tbody>
@@ -1005,106 +911,374 @@
           </div>
         </div>
       </div>
-      <!-- <div class="transaction__animation">
-        <img
-          src="assets/images/transaction/wrestler.png"
-          alt="Wrestler"
-          class="wrestler"
-        />
-        <img
-          src="assets/images/transaction/footballer.png"
-          alt="Footballer"
-          class="footballer"
-        />
-      </div> -->
     </section>
     <!-- ==== #transaction table end ==== -->
 
-    <!-- ==== invest section start ==== -->
-    <!-- <section class="invest section__space">
+    <!-- ==== testimonial section start ==== -->
+    <section class="testimonial section__space pos__rel over__hi" id="friends">
       <div class="container">
-        <div class="invest__area">
-          <div class="section__header mb-55">
-            <h5 class="content__space--alt">How You Can Invest Your</h5>
-            <h2 class="content__space">Crypto More Smartly</h2>
-            <p>
-              It’s a simple way to start investing in StakeCity.You don’t need a
-              deep wallet to start earning. Pick an amount you can afford, and
-              build your assets over time through compounding.
-            </p>
+        <div class="testimonial__area">
+          <div class="section__header section__header__space">
+            <h5 class="content__space--alt">Meet Our Friends</h5>
           </div>
-          <div class="row">
-            <div class="col-sm-6 col-lg-4">
-              <div class="invest__items column__space">
-                <div class="invest__img__group cta__space">
-                  <img src="assets/images/invest/register.png" alt="register" />
-                  <span>01</span>
+          <div class="testimonial__item__wrapper">
+            <div
+              class="testimonial__item bg__img"
+              data-background="assets/images/testimonial/quotation.png"
+            >
+              <h5 class="cta__space">
+                Innovative web3 solution for the modern day
+              </h5>
+              <p class="primary cta__space">
+                We at
+                <a href="https://www.plabexpress.com" style="color: #04dc60"
+                  >PlanB</a
+                >
+                wish to show our immense support for StakerCity, a revolutionary
+                staking based cryptocurrency
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__author__info">
+                  <img
+                    src="assets/images/testimonial/jonathan.png"
+                    alt="jonathan"
+                  />
+                  <div>
+                    <h5 class="content__space--extra--small">
+                      Felix Jimoh
+                    </h5>
+                    <p>C.E.O, PlanB</p>
+                  </div>
                 </div>
-                <h4>
-                  Connect <br />
-                  Wallet
-                </h4>
+                <div class="testimonial__author__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="invest__items column__space">
-                <div class="invest__img__group cta__space">
-                  <img src="assets/images/invest/invest.png" alt="Invest" />
-                  <span>02</span>
+            <div
+              class="testimonial__item bg__img"
+              data-background="assets/images/testimonial/quotation.png"
+            >
+            <h5 class="cta__space">
+              Innovative web3 solution for the modern day
+            </h5>
+            <p class="primary cta__space">
+              We at
+              <a href="https://www.plabexpress.com" style="color: #04dc60"
+                >PlanB</a
+              >
+              wish to show our immense support for StakerCity, a revolutionary
+              staking based cryptocurrency
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__author__info">
+                <img
+                  src="assets/images/testimonial/jonathan.png"
+                  alt="jonathan"
+                />
+                <div>
+                  <h5 class="content__space--extra--small">
+                    Felix Jimoh
+                  </h5>
+                  <p>C.E.O, PlanB</p>
                 </div>
-                <h4>
-                  Choose <br />
-                  Plan
-                </h4>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="invest__items">
-                <div class="invest__img__group cta__space">
-                  <img src="assets/images/invest/profit.png" alt="Profit" />
-                  <span>03</span>
+                <div class="testimonial__author__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
                 </div>
-                <h4>Earn</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- ==== #invest section end ==== -->
-
-    <!-- ==== affiliate section start ==== -->
-
-    <!-- ==== #affiliate section end ==== -->
-    <!-- ==== trustworthy section start ==== -->
-    <section class="trust section__space__bottom">
-      <div class="container">
-        <div class="trust__area">
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-6 d-none d-lg-block">
-              <div class="trust__illustration column__space thumb__rtl">
-                <img
-                  src="assets/images/testimonial/rugby-player.png"
-                  alt="Rugby Player"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="section__header text-start">
-                <h5 class="content__space text-start">Trustworthy Platform</h5>
-                <h3 class="cta__space text-start">
-                  StakeCity is here to stay
-                </h3>
-                <a href="dashboard.html" class="button">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="testimonial__animation">
+        <img
+          src="assets/images/testimonial/sm-circle.png"
+          alt="Circle"
+          class="circle__sm"
+        />
+        <img
+          src="assets/images/testimonial/sm-circle.png"
+          alt="Circle"
+          class="circle__sm--two"
+        />
+        <img
+          src="assets/images/testimonial/large-circle.png"
+          alt="Circle"
+          class="circle__lg"
+        />
+        <img
+          src="assets/images/testimonial/large-circle.png"
+          alt="Circle"
+          class="circle__lg--two"
+        />
       </div>
     </section>
-    <!-- ==== #trustworthy section end ==== -->
-
-    <!-- ==== footer section start ==== -->
+        <!-- ==== team section start ==== -->
+        <section
+        class="team section__space bg__img"
+        data-background="./assets/images/team/team-bg.png" id="team"
+      >
+        <div class="container">
+          <div class="team__area">
+            <div class="section__header section__header__space">
+              <h5 class="content__space--alt">Meet Our Team</h5>
+              <h2 class="content__space">Our Expert Member</h2>
+              <p>The amazing team behind our company</p>
+            </div>
+            <div class="row content__space">
+              <div class="col-sm-6 col-lg-3">
+                <div class="team__single column__space">
+                  <img
+                    src="assets/images/team/francis.png"
+                    alt="Francis"
+                    class="content__space"
+                  />
+                  <h5 class="content__space--small">Felix Jimoh</h5>
+                  <p class="content__space">Adviser</p>
+                  <div class="social">
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="team__single column__space">
+                  <img
+                    src="assets/images/team/francisco.png"
+                    alt="Francisco"
+                    class="content__space"
+                  />
+                  <h5 class="content__space--small">Kola Akintoye</h5>
+                  <p class="content__space">Adviser</p>
+                  <div class="social">
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="team__single team__single--third">
+                  <img
+                    src="assets/images/team/sarah.png"
+                    alt="Sarah"
+                    class="content__space"
+                  />
+                  <h5 class="content__space--small">Victor Isaac</h5>
+                  <p class="content__space">Team Lead</p>
+                  <div class="social">
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="team__single">
+                  <img
+                    src="assets/images/team/sheldon.png"
+                    alt="Sheldon"
+                    class="content__space"
+                  />
+                  <h5 class="content__space--small">Israel David</h5>
+                  <p class="content__space">Frontend Developer</p>
+                  <div class="social">
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==== #team section end ==== -->
+  
+    <!-- ==== faq section start ==== -->
+    <section class="faq section__space over__hi" id="faq">
+      <div class="container">
+        <div class="faq__area">
+          <div class="section__header section__header__space">
+            <h2 class="content__space">FAQ</h2>
+          </div>
+          <div class="faq__btn__wrapper text-center cta__space"></div>
+          <div class="faq__tab__content__wrapper">
+            <div class="faq__tab__content" id="company">
+              <div class="faq__group">
+                <div class="accordion" id="accordionExampleCompany">
+                  <div class="accordion-item content__space">
+                    <h5 class="accordion-header" id="headingCompanyOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseCompanyOne"
+                        aria-expanded="true"
+                        aria-controls="collapseCompanyOne"
+                      >
+                        Why do the top wallets take up a significant portion of
+                        total supply
+                      </button>
+                    </h5>
+                    <div
+                      id="collapseCompanyOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingCompanyOne"
+                      data-bs-parent="#accordionExampleCompany"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          StakerCity has designed a one-of-a-kind staking
+                          platform that allows its users to earn passive income
+                          from both staking incentives and dividends. The two
+                          largest wallets now represent staking pools, which
+                          have thousands of users staking their tokens and
+                          earning rewards.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item content__space">
+                    <h5 class="accordion-header" id="headingCompanyTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseCompanyTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseCompanyTwo"
+                      >
+                        Where do I buy $TAKER
+                      </button>
+                    </h5>
+                    <div
+                      id="collapseCompanyTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingCompanyTwo"
+                      data-bs-parent="#accordionExampleCompany"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          $TAKER is currently listed on PancakeSwap DEX however
+                          we are coming to your favourite CEXs following a poll
+                          3 Months after TGE according to the project's roadmap
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item content__space">
+                    <h5 class="accordion-header" id="headingCompanyThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseCompanyThree"
+                        aria-expanded="false"
+                        aria-controls="collapseCompanyThree"
+                      >
+                        What are reflection/dividends and how do they work?
+                      </button>
+                    </h5>
+                    <div
+                      id="collapseCompanyThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingCompanyThree"
+                      data-bs-parent="#accordionExampleCompany"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          The dividends on StakerCity are gathered from
+                          transaction taxes inside the smart contract and then
+                          dispersed proportionally to all $TAKER holders.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item content__space">
+                    <h5 class="accordion-header" id="headingCompanyFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseCompanyFour"
+                        aria-expanded="false"
+                        aria-controls="collapseCompanyFour"
+                      >
+                        Are your team doxxed?
+                      </button>
+                    </h5>
+                    <div
+                      id="collapseCompanyFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingCompanyFour"
+                      data-bs-parent="#accordionExampleCompany"
+                    >
+                      <div class="accordion-body">
+                        <p>Yes, you can go through the whitepaper</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq__animation">
+        <img
+          src="assets/images/faq/support.png"
+          alt="Support"
+          class="support"
+        />
+      </div>
+    </section>
+    <!-- ==== #faq section end ==== -->
     <footer class="footer">
       <div class="container">
         <div class="footer__nav">
@@ -1124,7 +1298,7 @@
             </li>
             <li>
               <a href="javascript:void(0)">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-telegram"></i>
               </a>
             </li>
           </ul>
@@ -1134,26 +1308,8 @@
             <div class="col-lg-8">
               <div class="footer__credit__left">
                 <p class="text-center text-lg-start">
-                  Copyright © <a href="index.html#0">StakeCity Finance</a>
+                  Copyright © <a href="index.html#0">StakerCity Finance</a>
                 </p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="footer__credit__right">
-                <div class="social text-center text-lg-end">
-                  <a href="javascript:void(0)">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="javascript:void(0)">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="javascript:void(0)">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a href="javascript:void(0)">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
