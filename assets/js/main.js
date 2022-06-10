@@ -751,3 +751,27 @@ function copyEl() {
      3000);
   
 }
+
+// Referee wallet address and not link
+function doCleanup(elem) {
+  var labelEl = document.getElementById('wallet-label')
+  var val = elem.value;
+  console.log(val);
+  // Check if the text does not starts with 0x
+  if(!val.match(/^0x/)) {
+    // Remove the excess link, leaving just the address
+    walletAddress = val.slice(30, );
+    // Remove extra whitespaces
+    cleanedWalletAddress = walletAddress.trim();
+    console.log(cleanedWalletAddress)
+    // Check if it's truly a wallet address
+    if(!cleanedWalletAddress.match(/^0x/)){
+      // if it's not then clear the input field
+      elem.value = "";
+      // Create an alert
+      elem.placeholder = "⚠️Please paste a valid referral link or wallet address";
+    } else{
+      elem.value = cleanedWalletAddress.replace(/^\s+|\s+$/gm,'');
+    }
+  }
+}
