@@ -4,7 +4,7 @@
  Template Name: StakerCity
  Version: 1.0
  Description: Crypto Investment With StakerCity
- Author: Victhereum
+ Author: StakerCity
  Author URI: 
 
  01. Abstracts
@@ -1629,7 +1629,7 @@ button:hover {
   z-index: 1;
   position: relative;
   overflow: hidden;
-  width: 203px;
+  width: 150px;
   text-align: center;
 }
 
