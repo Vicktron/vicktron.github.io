@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import Home from './pages/Home'; 
 import Deposit from './pages/Deposit';
