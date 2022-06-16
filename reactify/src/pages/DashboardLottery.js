@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
-class dashboardLottery extends React.Component {
+class DashboardLottery extends React.Component {
   render() {
     return (
       <div>
@@ -117,4 +117,4 @@ class dashboardLottery extends React.Component {
   
 }
 
-export default dashboardLottery
+export default DashboardLottery
