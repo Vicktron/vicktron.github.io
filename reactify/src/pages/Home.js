@@ -152,7 +152,7 @@ class Home extends React.Component {
                                 title="YouTube video player"
                             >
                                 <img
-                                src="../images/icons/play.png"
+                                src="assets/images/icons/play.png"
                                 alt="Play Icon"
                                 />
                             </a>
@@ -222,7 +222,7 @@ class Home extends React.Component {
                         <div class="col-md-6 col-lg-12 col-xxl-6">
                             <div class="mission__content__items">
                             <img
-                                src="../images/mission/dollar-bag.png"
+                                src="assets/images/mission/dollar-bag.png"
                                 alt="Dollar"
                             />
                             <div class="ission__content__items--content">
@@ -858,7 +858,7 @@ class Home extends React.Component {
                         <div className="testimonial__item__wrapper">
                             <div
                             className="testimonial__item bg__img"
-                            data-background="assets/images/testimonial/quotation.png"
+                            data-background="../images/testimonial/large-circle.png"
                             >
                             <h5 className="cta__space">
                                 Innovative web3 solution for the modern day
@@ -874,7 +874,7 @@ class Home extends React.Component {
                             <div class="testimonial__author">
                                 <div class="testimonial__author__info">
                                 <img
-                                    src="assets/images/testimonial/jonathan.png"
+                                    src="../images/testimonial/jonathan.png"
                                     alt="jonathan"
                                 />
                                 <div>
@@ -895,7 +895,7 @@ class Home extends React.Component {
                             </div>
                             <div
                             class="testimonial__item bg__img"
-                            data-background="assets/images/testimonial/quotation.png"
+                            data-background="../images/testimonial/large-circle.png"
                             >
                             <h5 class="cta__space">
                             Innovative web3 solution for the modern day
@@ -911,7 +911,7 @@ class Home extends React.Component {
                             <div className="testimonial__author">
                             <div className="testimonial__author__info">
                                 <img
-                                src="../images/testimonial/jonathan.png"
+                                src="assets/images/testimonial/jonathan.png"
                                 alt="jonathan"
                                 />
                                 <div>
