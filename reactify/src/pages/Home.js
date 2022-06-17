@@ -130,7 +130,7 @@ class Home extends React.Component {
                     <div class="col-lg-6 col-xl-6">
                     <div class="hero__content">
                         <h4 class="content__space--small">Stake tokens and Earn</h4>
-                        <h1 class="mb-25">Passive Income With $TAKER</h1>
+                        <h1 class="mb-25">Passive Income With $TAKA</h1>
                         <p class="primary mb-38">
                         Mint tokens to earn passive income by staking them in
                         StakerCity decentralized ecosystem and earn through staking
@@ -414,7 +414,7 @@ class Home extends React.Component {
                     <div class="investment__item__inner">
                         <img
                         src="assets/images/investment/StakerCity_Logo.png"
-                        alt="$TAKER-10"
+                        alt="$TAKA-10"
                         />
                         <div class="investment__item__content text-center">
                         <p class="secondary text-center">Builder</p>
@@ -427,7 +427,7 @@ class Home extends React.Component {
                             className="d-flex align-items-center justify-content-between"
                             >
                             <p>Min. Invest</p>
-                            <p>$TAKER 5000</p>
+                            <p>$TAKA 5000</p>
                             </div>
                         </div>
                         <div class="invest__limit mb-35">
@@ -446,7 +446,7 @@ class Home extends React.Component {
                     <div class="investment__item__inner">
                         <img
                         src="assets/images/investment/StakerCity_Logo.png"
-                        alt="$TAKER-11"
+                        alt="$TAKA-11"
                         />
                         <div class="investment__item__content text-center">
                         <p class="secondary text-center">Financier</p>
@@ -459,7 +459,7 @@ class Home extends React.Component {
                             class="d-flex align-items-center justify-content-between"
                             >
                             <p>Min. Invest</p>
-                            <p>$TAKER 30,000</p>
+                            <p>$TAKA 30,000</p>
                             </div>
                         </div>
                         <div class="invest__limit mb-35">
@@ -478,7 +478,7 @@ class Home extends React.Component {
                     <div class="investment__item__inner">
                         <img
                         src="assets/images/investment/StakerCity_Logo.png"
-                        alt="$TAKER-12"
+                        alt="$TAKA-12"
                         />
                         <div class="investment__item__content text-center">
                         <p class="secondary text-center">Banker</p>
@@ -491,7 +491,7 @@ class Home extends React.Component {
                             class="d-flex align-items-center justify-content-between"
                             >
                             <p>Min. Invest</p>
-                            <p>$TAKER 100,000</p>
+                            <p>$TAKA 100,000</p>
                             </div>
                         </div>
                         <div class="invest__limit mb-35">
@@ -510,7 +510,7 @@ class Home extends React.Component {
                     <div class="investment__item__inner">
                         <img
                         src="assets/images/investment/StakerCity_Logo.png"
-                        alt="$TAKER-13"
+                        alt="$TAKA-13"
                         />
                         <div class="investment__item__content text-center">
                         <p class="secondary text-center">Investor</p>
@@ -523,7 +523,7 @@ class Home extends React.Component {
                             class="d-flex align-items-center justify-content-between"
                             >
                             <p>Min. Invest</p>
-                            <p>$TAKER 100,000</p>
+                            <p>$TAKA 100,000</p>
                             </div>
                         </div>
                         <div class="invest__limit mb-35">
@@ -646,12 +646,12 @@ class Home extends React.Component {
                             Get Chance to Win
                         </h5>
                         <h2 class="content__space--alt text-start">
-                            Win up to 10 Thousand $TAKER in the Weekly lottery
+                            Win up to 10 Thousand $TAKA in the Weekly lottery
                         </h2>
                         <p class="mb-35 text-start">
                             For every active $ 500 investment you will receive a lottery
                             ticket to our weekly raffle every Monday. Pick your lucky
-                            numbers and win up to 10 thousand $TAKER. The more numbers
+                            numbers and win up to 10 thousand $TAKA. The more numbers
                             you match, the more money you win!
                         </p>
                         <a href="investment-plan.html" class="button"
@@ -725,7 +725,7 @@ class Home extends React.Component {
                         </div>
                         <div>
                             <h3 class="content__space--small">100 Accounts</h3>
-                            <p>$TAKER 5000</p>
+                            <p>$TAKA 5000</p>
                         </div>
                         </div>
                     </div>
@@ -740,7 +740,7 @@ class Home extends React.Component {
                         </div>
                         <div>
                             <h3 class="content__space--small">1000 Accounts</h3>
-                            <p>$TAKER 100,000</p>
+                            <p>$TAKA 100,000</p>
                         </div>
                         </div>
                     </div>
@@ -755,7 +755,7 @@ class Home extends React.Component {
                         </div>
                         <div>
                             <h3 class="content__space--small">10,000 Accounts</h3>
-                            <p>$TAKER 500,000</p>
+                            <p>$TAKA 500,000</p>
                         </div>
                         </div>
                     </div>
@@ -836,8 +836,8 @@ class Home extends React.Component {
                                 <span>0x7dcn...987gt</span>
                                 </div>
                             </td>
-                            <td>$TAKER 100,000</td>
-                            <td>$TAKER 160,000</td>
+                            <td>$TAKA 100,000</td>
+                            <td>$TAKA 160,000</td>
                             <td>Investor</td>
                             </tr>
                         </tbody>
@@ -874,7 +874,7 @@ class Home extends React.Component {
                             <div class="testimonial__author">
                                 <div class="testimonial__author__info">
                                 <img
-                                    src="../images/testimonial/jonathan.png"
+                                    src="assets/images/testimonial/jonathan.png"
                                     alt="jonathan"
                                 />
                                 <div>
@@ -934,22 +934,22 @@ class Home extends React.Component {
                 </div>
                 <div className="testimonial__animation">
                     <img
-                    src="../images/testimonial/sm-circle.png"
+                    src="assets/images/testimonial/sm-circle.png"
                     alt="Circle"
                     className="circle__sm"
                     />
                     <img
-                    src="../images/testimonial/sm-circle.png"
+                    src="assets/images/testimonial/sm-circle.png"
                     alt="Circle"
                     className="circle__sm--two"
                     />
                     <img
-                    src="../images/testimonial/large-circle.png"
+                    src="assets/images/testimonial/large-circle.png"
                     alt="Circle"
                     className="circle__lg"
                     />
                     <img
-                    src="../images/testimonial/large-circle.png"
+                    src="assets/images/testimonial/large-circle.png"
                     alt="Circle"
                     className="circle__lg--two"
                     />
@@ -971,7 +971,7 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-lg-3">
                         <div className="team__single column__space">
                         <img
-                            src="./images/team/francis.png"
+                            src="assets/images/team/francis.png"
                             alt="Francis"
                             className="content__space"
                         />
@@ -996,7 +996,7 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-lg-3">
                         <div className="team__single column__space">
                         <img
-                            src="./images/team/francisco.png"
+                            src="assets/images/team/francisco.png"
                             alt="Francisco"
                             className="content__space"
                         />
@@ -1021,7 +1021,7 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-lg-3">
                         <div className="team__single team__single--third">
                         <img
-                            src="./images/team/sarah.png"
+                            src="assets/images/team/sarah.png"
                             alt="Sarah"
                             className="content__space"
                         />
@@ -1046,7 +1046,7 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-lg-3">
                         <div className="team__single">
                         <img
-                            src="./images/team/sheldon.png"
+                            src="assets/images/team/sheldon.png"
                             alt="Sheldon"
                             className="content__space"
                         />
@@ -1126,7 +1126,7 @@ class Home extends React.Component {
                                 aria-expanded="false"
                                 aria-controls="collapseCompanyTwo"
                             >
-                                Where do I buy $TAKER
+                                Where do I buy $TAKA
                             </button>
                             </h5>
                             <div
@@ -1137,7 +1137,7 @@ class Home extends React.Component {
                             >
                             <div className="accordion-body">
                                 <p>
-                                $TAKER is currently listed on PancakeSwap DEX however
+                                $TAKA is currently listed on PancakeSwap DEX however
                                 we are coming to your favourite CEXs following a poll
                                 3 Months after TGE according to the project's roadmap
                                 </p>
@@ -1167,7 +1167,7 @@ class Home extends React.Component {
                                 <p>
                                 The dividends on StakerCity are gathered from
                                 transaction taxes inside the smart contract and then
-                                dispersed proportionally to all $TAKER holders.
+                                dispersed proportionally to all $TAKA holders.
                                 </p>
                             </div>
                             </div>
