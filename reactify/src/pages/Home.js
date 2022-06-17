@@ -2,7 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 import Logo from '../images/logo.png'
-
+import Mail from '../images/icons/mail.png'
 class Home extends React.Component {
   render() {
     return (
@@ -15,7 +15,7 @@ class Home extends React.Component {
                     <div className="topbar__left__content">
                         <p className="tertiary">
                         <a href="mailto:hello@stakecity.finance">
-                            <img src="../images/icons/mail.png" alt="Email Us" />
+                            <img src={Mail} alt="Email Us" />
                         </a>
                         hello@stakecity.finance
                         </p>
@@ -124,7 +124,7 @@ class Home extends React.Component {
         
             <section
             class="hero bg__img"
-            data-background="./assets/images/hero/hero-bg.png"
+            data-background="../images/hero/hero-bg.png"
             >
             <div class="container">
                 <div class="hero__area">
@@ -257,7 +257,7 @@ class Home extends React.Component {
     
             <section
             class="feature-two section__space bg__img"
-            data-background="./assets/images/features/features-bg-two.png" id="tokenomics"
+            data-background="../images/features/features-bg-two.png" id="tokenomics"
             >
             <div className="container">
                 <div className="feature-two__wrapper">
@@ -307,7 +307,7 @@ class Home extends React.Component {
     
             <section
             class="feature section__space bg__img"
-            data-background="./assets/images/features/features-bg.png" id="features"
+            data-background="../images/features/features-bg.png" id="features"
             >
             <div class="container">
                 <div class="feature__area">
@@ -398,7 +398,7 @@ class Home extends React.Component {
         
             <section
             class="investment invest__alt section__space bg__img pos__rel over__hi"
-            data-background="./assets/images/investment/investment-bg.png" id="staking"
+            data-background="../images/investment/investment-bg.png" id="staking"
             >
             <div class="container">
                 <div class="investment__area">
@@ -700,7 +700,7 @@ class Home extends React.Component {
             </section>
             <section
             class="affiliate section__space bg__img"
-            data-background="./assets/images/affiliate/affiliate-bg.png"
+            data-background="../images/affiliate/affiliate-bg.png"
             >
             <div class="container">
                 <div class="affiliate__area">
@@ -771,7 +771,7 @@ class Home extends React.Component {
             <div class="container">
                 <div
                 class="profit__area bg__img"
-                data-background="./assets/images/ready/line-bg.png"
+                data-background="../images/ready/line-bg.png"
                 >
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6">
@@ -801,7 +801,7 @@ class Home extends React.Component {
     
             <section
             class="section__space transaction pos__rel bg__img"
-            data-background="./assets/images/transaction/transaction-bg.png" id="transactions"
+            data-background="../images/transaction/transaction-bg.png" id="transactions"
             >
             <div class="container">
                 <div class="transaction__area">
@@ -1206,7 +1206,7 @@ class Home extends React.Component {
             </div>
             <div className="faq__animation">
                 <img
-                src="./images/faq/support.png"
+                src="assets/images/faq/support.png"
                 alt="Support"
                 className="support"
                 />
@@ -1216,7 +1216,7 @@ class Home extends React.Component {
             <div className="container">
                 <div className="footer__nav">
                 <a href="index.html" class="logo">
-                    <img src="./images/logo.png" alt="Logo" />
+                    <img src={Logo} alt="Logo" />
                 </a>
                 <ul>
                     <li>
@@ -1250,12 +1250,12 @@ class Home extends React.Component {
             </div>
             <div className="footer__animation">
                 <img
-                src="./images/footer/footer-left-illustration.png"
+                src="assets/images/footer/footer-left-illustration.png"
                 alt="Footer Illustration"
                 className="left__illustration"
                 />
                 <img
-                src="./images/footer/footer-right-illustration.png"
+                src="assets/images/footer/footer-right-illustration.png"
                 alt="Footer Illustration"
                 className="right__illustration"
                 />
