@@ -1,9 +1,6 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
-class DashboardLottery extends React.Component {
+class dashboardLottery extends React.Component {
   render() {
     return (
       <div>
@@ -117,4 +114,4 @@ class DashboardLottery extends React.Component {
   
 }
 
-export default DashboardLottery
+export default dashboardLottery

@@ -1,63 +1,62 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
-    
+    <!-- required meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- #favicon -->
     <link
       rel="shortcut icon"
       href="assets/images/favicon.png"
       type="image/x-icon"
     />
-    
+    <!-- #title -->
     <title>StakerCity &dash; Coin</title>
-    
+    <!-- #keywords -->
     <meta
       name="keywords"
       content="cryptocurrency, financial, financial company, stakecity, STAKER, crypto, coin, token, staking, "
     />
-    
+    <!-- #description -->
     <meta name="description" content="Crypto Investment With StakerCity" />
-    
+    <!-- #author -->
     <meta name="Victhereum" content="StakerCity Token and Ecosystem" />
 
-    
+    <!-- ==== css dependencies start ==== -->
 
-    
+    <!-- bootstrap five css -->
     <link
       rel="stylesheet"
       href="assets/vendors/bootstrap/css/bootstrap.min.css"
     />
-    
+    <!-- font awesome five css -->
+    <!-- <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" /> -->
     <script
       src="https://kit.fontawesome.com/6b08b0754c.js"
       crossorigin="anonymous"
     ></script>
-    
+    <!-- nice select css -->
     <link
       rel="stylesheet"
       href="assets/vendors/nice-select/css/nice-select.css"
     />
-    
+    <!-- magnific popup css -->
     <link
       rel="stylesheet"
       href="assets/vendors/magnific-popup/css/magnific-popup.css"
     />
-    
+    <!-- slick css -->
     <link rel="stylesheet" href="assets/vendors/slick/css/slick.css" />
 
-    
+    <!-- ==== css dependencies end ==== -->
 
-    
+    <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-    
+    <!-- ==== topbar start ==== -->
     <div class="topbar topbar__dashboard d-none d-lg-block">
       <div class="container">
         <div class="topbar__area">
@@ -99,8 +98,9 @@
         </div>
       </div>
     </div>
-    
-    
+    <!-- ==== topbar end ==== -->
+
+    <!-- ==== header start ==== -->
     <header class="header__dashboard header__alt">
       <nav class="navbar navbar-expand-xl">
         <div class="container">
@@ -128,7 +128,12 @@
                   </div>
                 </div>
               </div>
-              
+              <!-- <select class="language-select"> Multi Language Support
+                            <option value="english">En</option>
+                            <option value="australia">Aus</option>
+                            <option value="brazil">Bra</option>
+                            <option value="argentina">Arg</option>
+                        </select> -->
               <div class="profile__meta">
                 <a href="javascript:void(0)" class="profile__small">
                   <img src="assets/images/avatar.png" alt="Profile Image" />
@@ -168,8 +173,8 @@
         </div>
       </nav>
     </header>
-    
-    
+    <!-- ==== #header end ==== -->
+    <!-- ==== dashboard section start ==== -->
     <div class="dashboard section__space__bottom">
       <div class="container">
         <div class="dashboard__area">
@@ -369,9 +374,9 @@
       </div>
     </div>
     <div class="overlay"></div>
-    
+    <!-- ==== #dashboard section end ==== -->
 
-    
+    <!-- ==== footer section start ==== -->
     <footer class="footer">
       <div class="container">
         <div class="footer__nav">
@@ -441,36 +446,37 @@
         />
       </div>
     </footer>
-    
+    <!-- ==== #footer section end ==== -->
 
-    
+    <!-- Scroll To Top -->
     <a href="javascript:void(0)" class="scrollToTop">
       <i class="fas fa-angle-double-up"></i>
     </a>
 
-    
+    <!-- ==== js dependencies start ==== -->
 
-       <script
+    <!-- jquery -->
+    <script
       data-cfasync="false"
       src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
     <script src="assets/vendors/jquery/jquery.min.js"></script>
-    
+    <!-- bootstrap five js -->
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- nice select js -->
     <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    
+    <!-- magnific popup js -->
     <script src="assets/vendors/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-    
+    <!-- slick js -->
     <script src="assets/vendors/slick/js/slick.js"></script>
-    
+    <!-- shuffle js -->
     <script src="assets/vendors/shuffle/shuffle.min.js"></script>
 
-    
+    <!-- ==== js dependencies end ==== -->
 
-    
+    <!-- plugin js -->
     <script src="assets/js/plugin.js"></script>
-    
+    <!-- main js -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
