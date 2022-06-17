@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-
+import dashboardLottery from './DashboardLottery'
 import Logo from '../images/logo.png'
 import Mail from '../images/icons/mail.png'
 class Home extends React.Component {
@@ -60,7 +61,7 @@ class Home extends React.Component {
                       
                     <a
                         class="button"
-                        href="../pages/DashboardLottery.js"
+                        href="./padashboard.js"
                         style= {{ marginRight: '10px' }} 
                     >
                         App
