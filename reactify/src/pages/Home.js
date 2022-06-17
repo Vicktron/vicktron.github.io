@@ -57,9 +57,7 @@ class Home extends React.Component {
                 </a>
                 <div class="navbar__out order-2 order-xl-3">
                     <div class="nav__group__btn">
-                     <a href="login.html" class="button active__btn d-none d-sm-block">
-                        Log In
-                    </a> 
+                      
                     <a
                         class="button"
                         href="../pages/DashboardLottery.js"
